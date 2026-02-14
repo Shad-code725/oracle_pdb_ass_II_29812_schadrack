@@ -1,6 +1,6 @@
 # Oracle Pluggable Database — Assignment II
 
-**Student Name:** Schadrack Muyisenge NIYOKURI   
+**Student Name:** Schadrack Muyisenge NIYOKURI  
 **Student ID:** 29812  
 **Repository:** oracle_pdb_ass_II_29812_schadrack  
 **Course:** Oracle Database / PL-SQL — AUCA  
@@ -23,7 +23,7 @@ This repository documents the full completion of **Assignment II** for the Oracl
 
 | Component         | Details                                      |
 |-------------------|----------------------------------------------|
-| Database Edition  | Oracle AI Database 21c/23ai Free Release         |
+| Database Edition  | Oracle AI Database 23ai Free Release         |
 | Version           | 23.26.1.0.0                                  |
 | Operating System  | Windows 10 Pro (64-bit)                      |
 | Data Directory    | C:\APP\KADOSHI\PRODUCT\26AI\ORADATA\FREE\    |
@@ -83,9 +83,15 @@ ALTER PLUGGABLE DATABASE sc_pdb_29812 SAVE STATE;
 ```
 
 ### Evidence
-📸 See `screenshots/task1_pdb_creation.png` — PDB creation command and success message  
-📸 See `screenshots/task1_pdb_open.png` — V$PDBS showing SC_PDB_29812 in READ WRITE mode  
-📸 See `screenshots/task1_user_created.png` — SCHADRACK_PLSQLAUCA_29812 visible with OPEN status  
+
+**PDB Creation Command:**
+![PDB Creation](https://raw.githubusercontent.com/Shad-code725/oracle_pdb_ass_II_29812_schadrack/main/screenshots/db_creation.PNG)
+
+**PDB Open in READ WRITE Mode:**
+![PDB Open](https://raw.githubusercontent.com/Shad-code725/oracle_pdb_ass_II_29812_schadrack/main/screenshots/pdb_Open.PNG)
+
+**User Created Successfully:**
+![User Created](https://raw.githubusercontent.com/Shad-code725/oracle_pdb_ass_II_29812_schadrack/main/screenshots/user_created.PNG)
 
 ---
 
@@ -130,8 +136,15 @@ SELECT NAME, OPEN_MODE FROM V$PDBS;
 ```
 
 ### Evidence
-📸 See `screenshots/task2_temp_pdb_verified.png` — SC_TO_DELETE_PDB_29812 visible in V$PDBS  
-📸 See `screenshots/task2_pdb_deleted.png` — V$PDBS after deletion showing PDB is gone  
+
+**Temporary PDB Created:**
+![Temp PDB Created](https://raw.githubusercontent.com/Shad-code725/oracle_pdb_ass_II_29812_schadrack/main/screenshots/task2_temp_pdd_craated.PNG)
+
+**Temporary PDB Verified in V$PDBS:**
+![Temp PDB Verified](https://raw.githubusercontent.com/Shad-code725/oracle_pdb_ass_II_29812_schadrack/main/screenshots/task2_temp_pdd_verified.PNG)
+
+**Temporary PDB Deleted — No Longer Exists:**
+![PDB Deleted](https://raw.githubusercontent.com/Shad-code725/oracle_pdb_ass_II_29812_schadrack/main/screenshots/task2_pdb_deleted.PNG)
 
 ---
 
@@ -154,21 +167,9 @@ Since Oracle 23ai Free edition does not include Oracle Enterprise Manager Expres
 5. Confirmed SC_PDB_29812 is visible in READ WRITE mode
 
 ### Evidence
-📸 See `screenshots/task3_oem_dashboard.png` — SQL Developer dashboard showing SC_PDB_29812 in READ WRITE mode with Oracle_23ai_SYSDBA connection visible  
 
----
-
-## Screenshots Folder
-
-```
-screenshots/
-├── task1_pdb_creation.png        — CREATE PLUGGABLE DATABASE command + success message
-├── task1_pdb_open.png            — V$PDBS query showing SC_PDB_29812 READ WRITE
-├── task1_user_created.png        — SCHADRACK_PLSQLAUCA_29812 with OPEN status
-├── task2_temp_pdb_verified.png   — SC_TO_DELETE_PDB_29812 visible in V$PDBS
-├── task2_pdb_deleted.png         — V$PDBS after deletion confirming PDB is gone
-└── task3_oem_dashboard.png       — SQL Developer dashboard with SC_PDB_29812 visible
-```
+**Oracle SQL Developer Dashboard — SC_PDB_29812 Visible:**
+![OEM Dashboard](https://raw.githubusercontent.com/Shad-code725/oracle_pdb_ass_II_29812_schadrack/main/screenshots/task3_oem_dashboard.PNG)
 
 ---
 
@@ -197,7 +198,7 @@ screenshots/
 
 ## Integrity Statement
 
-I, **Schadrack** (Student ID: 29812), confirm that all work documented in this repository was performed individually and personally by me. All SQL commands were executed on my own Oracle 23ai Free installation, and all screenshots represent my own work completed on February 14, 2026. This assignment was completed in full accordance with the academic integrity policy of AUCA.
+I, **Schadrack Muyisenge NIYOKURI** (Student ID: 29812), confirm that all work documented in this repository was performed individually and personally by me. All SQL commands were executed on my own Oracle 23ai Free installation, and all screenshots represent my own work completed on February 14, 2026. This assignment was completed in full accordance with the academic integrity policy of AUCA.
 
 ---
 
